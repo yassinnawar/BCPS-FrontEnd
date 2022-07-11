@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>BCPS</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href=" css/bootstrap.css" />
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+    <!-- Custom css -->
+    <link href=" css/style.css" rel="stylesheet" />
+    <link href=" css/responsive.css" rel="stylesheet" />
+    <link href=" css/appointment.css" rel="stylesheet" />
+  </head>
+
+  <body class="sub_page">
+  <!-- header section -->
+    <div class="navigationbar">
+      <header class="header_section">
+        <div class="header-container">
+          <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="index.html">
+              <h3>
+                BCPS
+              </h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html ">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="appointment.html "> Appointment </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="profile.html "> Profile </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+
+    <div>
+  <!-- prediction section -->
+      <div id="maintext" style=" margin:auto;  margin-top: 50px; width:700px; height:300px; text-align:center;">
+        <h1 class="text-dark mb-5"> Your Prediction </h1>
+        <p class="text-dark"> The model's prediction is: </p>
+        <table class="table-bordered text-dark" style="width:100%">
+        <tr>
+          <th>Rank</th>
+          <th>Class</th>
+      
+        </tr>
+        <tr>
+          <td>Most Likely:</td>
+          <td>{{ predictions }}</td>
+          <!-- <td>{{ predictions.prob1 }}</td> -->
+        </tr>
+        </table>
+      <a href="{{ url_for('main_page') }}"><button class="button mt-3">Try again?</button></a>
+      </div>
+    </div>
+
+
+
+      <!-- footer section -->
+    <footer>
+    <section class="info_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="info_menu">
+              <h5>
+                QUICK LINKS
+              </h5>
+            <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="appointment.html"> Appointment </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+          </div>
+
+          <div class="col-md-5 offset-md-1">
+            <div class="info_news">
+              <h5>
+                FOR ANY QUERY, PLEASE WRITE TO US
+              </h5>
+              <div class="info_contact">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Location
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i> demo@gmail.com
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i> Call : +01 1234567890
+                </a>
+              </div>
+              <form name="newsletter_form" >
+                <input type="email" name="email" placeholder="Enter Your email" />
+                <button type="submit">Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </footer>
+
+    <script src=" js/jquery-3.4.1.min.js"></script>
+    <script src=" js/bootstrap.js"></script>
+    <script src=" js/custom.js"></script>
+  </body>
+</html>
